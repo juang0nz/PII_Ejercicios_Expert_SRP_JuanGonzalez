@@ -5,6 +5,13 @@ namespace Library
 {
     public class AppointmentService
     {
+        //Se definen los atributos 
+        public Paciente name {get; set;}       
+        private Paciente phoneNumber {get; set;}
+        public Doctor doctorName {get; set;}
+        private string id {get; set;}
+        public Doctor appoinmentPlace {get; set;}
+
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
         {
             StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
